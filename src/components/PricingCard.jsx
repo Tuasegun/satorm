@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const PricingCard = ({primary, title, subtitle, price, children}) => {
+const PricingCard = ({primary, title, subtitle, price, children, idName}) => {
   return (
-    <PricingCardStyle className={primary ? "active" : ""}>
+    <PricingCardStyle className={primary ? "active" : ""} id={idName}>
         <h4>{title}</h4>
         <p>{subtitle}</p>
         <div className="price-tag">
@@ -22,7 +22,7 @@ const PricingCardStyle = styled.div`
     padding: 2.5rem 1.5rem;
     background: #FFFADE;
     border: none;
-    max-height: 760px;
+    max-height: 1250px;
     position: relative;
 
     a {

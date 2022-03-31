@@ -6,48 +6,33 @@ import List from '../components/List'
 import Footer from '../components/Footer'
 
 const basic = [
-    "For beginners and those transitioning into Digital Marketing",
-    "Introduction to Digital Marketing; the various fields under digital marketing",
-    "Introduction to market research in Digital Marketing",
-    "Creating user personals",
-    "Introduction to copywriting and content writing",
-    "Social media marketing; Instagram, WhatsApp and Facebook marketing",
-    "Traffic generation using Facebook ads",
-    "Positioning yourself for Internships and APM roles",
+    "Introduction to Digital Marketing; Definition, Terminologies, Media in Digital Marketing, Traditional Marketing, Basic Concept, Traffic",
+    "Social Media Marketing; Definition, Platform Selection, Platform Creation/Set up(IG, FB, Twitter, Linkedln, Youtude), Social Media PageManagement",
+    "Content Marketing; Definition, information format, Subject line, Creating killer content, Hook, Promise, Offer, Content Calender",
+    "Creating user personalsPay Per Click Advertising; FB/IG ADS, Creative, Audience, Budget/Duration, Placement, FB pixels",
+    "Email Marketing; Definition, Email Management Tools, List Building, Squeeze Page, Email Writing",
+    "Sales Funnel; Customer journey, AIDA marketing model, Sales page",
+    "Copywriting; Definition, Know your product, competition, audience & Media, Customer Avatar, Hook, Power words, Guarantees & Formula",
+    "Affiliate Marketing; Definition, platforms, Commission/Payment",
     "Certificate of completion"
 ]
 
 const advanced = [
-    "For Intermediate digital marketers  looking to expand their knowledge and scale up their skill",
-    "Introduction to Digital Marketing; the various fields under digital marketing",
-    "Introduction to market research in Digital Marketing",
-    "Creating user personals",
-    "Building a one-page webpage with card",
-    "SEO; search engine optimisation",
-    "Email Marketing and automation",
-    "Introduction to copywriting and content writing",
-    "Social media marketing; Instagram, WhatsApp, Youtube and Facebook marketing",
-    "Traffic generation using Facebook and Instagram ads",
+    "Introduction to Digital Marketing; Definition, types of Digital Marketing ",
+    "Website Creation; Domain & Hosting purchase, Building landing pages, building a one page site with carrd.co",
+    "SEO; Terminology, Building Blocks, Google Business, One page SEO",
+    "Social Media Marketing; Definition, Platform Selection, Platform Creation/Set up(IG, FB, Twitter, Linkedln, Youtude), Social Media Page Management",
+    "Social Media Marketing; Definition, Platform Selection, Platform Creation/Set up(IG, FB, Twitter, Linkedln, Youtude), Social Media Page Management",
+    "WhatsApp Marketing; Setting up your WhatsApp for business, WhatsApp sales funnels, Advertising with WhatsApp status, Creating WhatsApp customize link, Whatsapp Business Tools",
+    "Fundamental of Graphic Design using canva; Canva interface, Tools in canvas, Creating business flyer designs, social media graphic, basic logo design",
+    "Facebook/Instagram Ads; Guidelines, Page creation, business as account, ad account, billing, targeting, lead generation ad with a website, lead generation ad without a website, spying on top advertiser",
+    "Google ads, Account setup, Search Ads, Display Ads, Video Ads",
+    "Content Marketing; Definition, information format, Subject line, Creating killer content, Hook, Promise, Offer, Content Calender",
     "Positioning yourself for Internships and APM roles",
+    "Copywriting; Definition, Know your product, competition, audience & Media, Customer Avatar, Hook, Power words, Guarantees & Formula",
     "Certificate of completion"
 ]
 
-const premium = [
-    "For Intermediate digital marketers  looking to expand their knowledge and scale up their skill",
-    "Introduction to Digital Marketing; the various fields under digital marketing",
-    "Introduction to market research in Digital Marketing",
-    "Creating user personal",
-    "Building a website, landing pages", 
-    "SEO; search engine optimisation",
-    "Email Marketing and automation",
-    "Introduction to copywriting and content writing",
-    "Social media marketing; Instagram, WhatsApp, Youtube, quota, linkedln, Twitter and Facebook marketing",
-    "App marketing", 
-    "Traffic generation using Facebook and Instagram ads",
-    "Google ads & Analytics",
-    "Positioning yourself for Internships and APM roles",
-    "Certificate of completion"
-]
 
 const Pricing = () => {
   return (
@@ -55,8 +40,9 @@ const Pricing = () => {
         <Header/>
         <PricingStyle>
             <PricingCard title="BASIC PROGRAM"
-                subtitle="For beginners and those transitioning into Digital Marketing"
+                subtitle="Learn the foundation of Digital Marketing"
                 price="₦30,000 for 6 weeks"
+                idName='basic'  
             >
                 {
                     basic.map((item, index) => {
@@ -65,8 +51,9 @@ const Pricing = () => {
                 }
             </PricingCard>
             <PricingCard title="ADVANCED PROGRAM"
-                subtitle="For Intermediate digital marketers  looking to expand their knowledge and scale up their skill"
+                subtitle="Learn the core skills, frameworks and tools needed to become a Digital Marketer"
                 price="₦60,000 for 9 weeks"
+                idName='advanced'    
             >
                 {
                     advanced.map((item, index) => {
@@ -74,16 +61,6 @@ const Pricing = () => {
                     }) 
                 }
             </PricingCard>
-            <PricingCard title="PREMIUM CLASS"
-                subtitle="For Intermediate digital marketers  looking to expand their knowledge and scale up their skill"
-                price="₦100,000 for 3 months"
-            >
-                {
-                    premium.map((item, index) => {
-                        return <List key={index} text={item}></List>
-                    }) 
-                }
-            </PricingCard>    
         </PricingStyle>
         <Footer/>
     </PricingStyleWrapper>

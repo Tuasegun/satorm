@@ -3,19 +3,12 @@ import styled from 'styled-components'
 import girl from '../assets/images/girlyBox.png'
 import blueBg from '../assets/images/blueBack.svg'
 import boy from "../assets/images/boyishBox.png";
-import jordy from "../assets/images/jordy.jpg"
-import {Link} from 'react-router-dom'
+
+import {HashLink} from 'react-router-hash-link'
 
 const GetStarted = () => {
   return (
-    <StyledGet
-        // data-aos="fade-up" 
-        // data-aos-easing="ease-in-sine"
-        // data-aos-duration="3000"
-        // data-aos-delay="200"
-        // data-aos-once="false"
-    
-    >
+    <StyledGet>
         <div className="textContainer">
           <div className="textLg">Get started <span>now</span></div>
           <div className="footNote">Here at Satorm we have two specialized class groups </div>
@@ -27,7 +20,7 @@ const GetStarted = () => {
        
           <div className="textandBut">
             <div className="cardText">Basic Class</div>
-            <Link to="/pricing" className="classButton">Start a class today</Link>
+            <HashLink to="/pricing/#basic" className="classButton">Start a class today</HashLink>
             </div>
           </div>
 
@@ -35,14 +28,7 @@ const GetStarted = () => {
           <div className="imageCard second">
             <div className="textandBut">
             <div className="cardText">Advanced Class</div>
-            <Link to="/pricing" className="classButton">Start a class today</Link>
-            </div>
-          </div>
-
-          <div className="imageCard third">
-            <div className="textandBut">
-            <div className="cardText">Premium Class</div>
-            <Link to="/pricing" className="classButton">Start a class today</Link>
+            <HashLink to="/pricing/#advanced" className="classButton">Start a class today</HashLink>
             </div>
           </div>
 
@@ -93,10 +79,6 @@ const StyledGet =styled.section`
 
       .second{
         background-image: url(${boy}) !important;
-      }
-
-      .third{
-        background-image: url(${jordy}) !important;
       }
 
       .imageCard{
