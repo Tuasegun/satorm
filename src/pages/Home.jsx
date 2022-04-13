@@ -7,7 +7,6 @@ import Hero from '../components/Hero'
 import Purpose from '../components/Purpose'
 import Testimony from '../components/Testimony'
 
-
 const Home = () => {
   return (
     <>
@@ -17,6 +16,7 @@ const Home = () => {
     <Purpose/>
     <Testimony/>
     <Footer/>
+    
     </>
   )
 }

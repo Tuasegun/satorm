@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import backgroundImg from "../assets/images/background.svg"
 import styled from 'styled-components'
 import Header from '../components/Header'
@@ -33,7 +33,7 @@ const Hero = () => {
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
         >
-            <div className="imgContainer">
+        <div className="imgContainer">
             <img src={girly} alt="" className="girlImg" />
             </div>
             <div className="textFloat1 textBody">100+ trained students</div>
@@ -165,7 +165,7 @@ const HeroStyle = styled.section`
             @media (min-width: 841px) and (max-width: 1055px) {
                 top: 19rem;
                 right: 0;
-            }
+            }   
             @media (min-width:490px) and (max-width: 561px) {
                 top: 25rem;
                 right: 0;
