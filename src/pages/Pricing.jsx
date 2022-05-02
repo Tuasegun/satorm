@@ -52,7 +52,7 @@ const Pricing = () => {
             </PricingCard>
             <PricingCard title="ADVANCED PROGRAM"
                 subtitle="Learn the core skills, frameworks and tools needed to become a Digital Marketer"
-                price="₦60,000 for 9 weeks"
+                price="₦60,000 for 12 weeks"
                 idName='advanced'    
             >
                 {
